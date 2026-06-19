@@ -96,7 +96,7 @@ Encerra a sessão do professor e retorna para a tela de login.
 
 ```
 
-escolaavaliacao/
+controleDeAtividade/
 
 ├── api/
 
