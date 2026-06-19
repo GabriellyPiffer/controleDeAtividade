@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Professor</title>
+
+    <link rel="stylesheet"
+        href="style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+
+</head>
+
+<body onload="carregarTurmas()">
+
+    <div class="container">
+
+        <nav>
+
+            <div class="logo-menu">
+
+                <i class="fa-solid fa-school fa-2x"></i>
+
+                <h2>Controle Escolar</h2>
+
+            </div>
+
+            <ul>
+
+                <li>
+
+                    <a href="professor.html">
+
+                        <i class="fa-solid fa-users"></i>
+
+                        Turmas
+
+                    </a>
+
+                </li>
+
+                <li onclick="sair()">
+
+                    <i class="fa-solid fa-right-from-bracket"></i>
+
+                    Sair
+
+                </li>
+
+            </ul>
+
+        </nav>
+
+        <main>
+
+            <div class="topo">
+
+                <div>
+
+                    <h1 id="nomeProfessor">
+                        Professor
+                    </h1>
+
+                    <p>
+                        Gerencie suas turmas
+                    </p>
+
+                </div>
+
+                <button
+                    onclick="modalTurma.classList.remove('oculto')">
+
+                    <i class="fa-solid fa-plus"></i>
+
+                    Nova Turma
+
+                </button>
+
+            </div>
+
+            <div class="tabela">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>#</th>
+                            <th>Turma</th>
+                            <th>Ações</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody id="listaTurmas">
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </main>
+
+    </div>
+
+
+    <div id="modalTurma"
+        class="modal oculto">
+
+        <div class="janela">
+
+            <h2>Cadastrar Turma</h2>
+
+            <form id="formTurma">
+
+                <label>Nome da Turma</label>
+
+                <input
+                    type="text"
+                    id="nomeTurma"
+                    required>
+
+                <br><br>
+
+                <button
+                    type="button"
+                    onclick="modalTurma.classList.add('oculto')">
+
+                    Cancelar
+
+                </button>
+
+                <button type="submit">
+
+                    Salvar
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <script src="professor.js"></script>
+
+    <script>
+
+        document
+            .querySelector('#formTurma')
+            .addEventListener(
+                'submit',
+                cadastrarTurma
+            );
+
+    </script>
+
+</body>
+
+</html>

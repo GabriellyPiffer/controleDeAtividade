@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Professor</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="login-container">
+
+        <div class="login-box">
+
+            <h1>Controle Escolar</h1>
+
+            <form id="formLogin">
+
+                <label>E-mail</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    required>
+
+                <label>Senha</label>
+
+                <input
+                    type="password"
+                    id="senha"
+                    required>
+
+                <button type="submit">
+
+                    <i class="fa-solid fa-right-to-bracket"></i>
+
+                    Entrar
+
+                </button>
+
+            </form>
+
+            <br>
+
+            <button
+                onclick="modalProfessor.classList.remove('oculto')">
+
+                Cadastrar Professor
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div id="modalProfessor"
+        class="modal oculto">
+
+        <div class="janela">
+
+            <h2>Cadastrar Professor</h2>
+
+            <form id="formProfessor">
+
+                <label>Nome</label>
+
+                <input
+                    type="text"
+                    id="nomeProfessorCad"
+                    required>
+
+                <label>Email</label>
+
+                <input
+                    type="email"
+                    id="emailProfessorCad"
+                    required>
+
+                <label>Senha</label>
+
+                <input
+                    type="password"
+                    id="senhaProfessorCad"
+                    required>
+
+                <br><br>
+
+                <button
+                    type="button"
+                    onclick="modalProfessor.classList.add('oculto')">
+
+                    Cancelar
+
+                </button>
+
+                <button type="submit">
+
+                    Salvar
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <script src="professor.js"></script>
+
+
+</body>
+
+</html>
