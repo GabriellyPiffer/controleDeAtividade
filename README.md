@@ -6,7 +6,7 @@ Sistema Full Stack desenvolvido para gerenciamento de turmas e atividades de pro
 
 # Integrantes
 
-- Gabrielly Piffer
+- Gabrielly Teixeira Piffer
 
 ---
 
