@@ -6,7 +6,7 @@ Sistema Full Stack desenvolvido para gerenciamento de turmas e atividades de pro
 
 # Integrantes
 
-- Gabrielly Piffer
+- Gabrielly Teixeira Piffer
 
 ---
 
@@ -96,7 +96,7 @@ Encerra a sessão do professor e retorna para a tela de login.
 
 ```
 
-escolaavaliacao/
+controleDeAtividade/
 
 ├── api/
 
